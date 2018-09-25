@@ -1,0 +1,239 @@
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v5/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v5/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px, 10/16 = 62.5% */
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.container {
+  background-color: #0b7af3;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.resume-box {
+  width: 100%;
+  min-height: 80vh;
+  max-width: 1120px;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 80vh;
+  padding: 6rem;
+  box-shadow: 0.4rem 0.7rem 9rem 0.3rem rgba(0,0,0,.3);
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.header__img {
+  margin-right: 8rem;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #0b7af3 ;
+  box-shadow: 0 0 1rem .3rem rgba(0,0,0,.3);
+  background-image: radial-gradient(closest-side,#f0f0f0 ,#0b7af3 );
+}
+
+.header__info {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.header__info h1 {
+  font-size: 4rem;
+  color: #0b7af3;
+}
+
+.header__info h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.header__info h2::after {
+  content: '';
+  display: block;
+  margin-top: 16px;
+  width: 100px;
+  border: 2px solid #0b7af3;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 4rem;
+  flex-grow: 1;
+}
+
+aside {
+  margin-right: 4rem;
+  margin-bottom: 4rem;
+}
+
+aside h3 {
+  font-size: 1.6rem;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: .8rem;
+}
+
+.contact__item {
+  font-size: 1.4rem;
+  padding: .6rem 0;
+  position: relative;
+}
+
+aside a {
+  text-decoration: none;
+  color: #333;
+}
+
+aside a:hover {
+  color: #777;
+}
+
+.contact__icon {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact__icon ion-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #0b7af3;
+}
+
+.contact__text {
+  display: inline-block;
+  margin-left: 2.6rem;
+}
+
+article {
+  background-color: #0b7af3;
+  box-shadow: 0.4rem 0.7rem 9rem 0.3rem rgba(0,0,0,.3);
+  border-radius: 3px;
+  padding: 1.6rem 3rem 3rem 3rem;
+  color: #fff;
+  flex-grow: 1;
+}
+
+article h3 {
+  font-size: 2rem;
+  color: #333;
+  margin: 1rem 0 .6rem 0  ;
+}
+
+article p {
+  font-size: 1.6rem;
+}
+
+article span {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    flex-flow: row wrap;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  header {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .header__img {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .resume-box {
+    padding: 4rem;
+  }
+
+  .header__info {
+    text-align: center
+  }
+
+  .header__info h2::after {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  aside {
+    margin: 0 auto 4rem auto;
+  }
+
+  aside h3 {
+    text-align: center;
+  }
+}
