@@ -186,15 +186,24 @@ article {
 article h3 {
   font-size: 2rem;
   color: #333;
-  margin: 1rem 0 .6rem 0  ;
+  margin: 1rem 0 .6rem 0;
 }
 
 article p {
   font-size: 1.6rem;
 }
 
-article span {
+article a {
   font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+article a:hover {
+  color: #f0f0f0;
+}
+
+article h3::selection, article p::selection, article a::selection {
+  background-color: #BBB;
 }
 
 @media only screen and (max-width: 1000px) {
